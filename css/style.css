@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none;
+}
+:root{
+    --grey:#696A72;
+    --black:#090609;
+    --red:#F24535;
+    --light-grey:#EBEEF2;
+    --title:'M PLUS Code Latin', sans-serif;
+    --text:'Karla', sans-serif;
+    --size-title:40px;
+    --size-text:17px;
+}
+
+body{
+ background-color: var(--light-grey);   
+}
+
+h1,h2,h3,h4,h5,h6{
+    text-transform: uppercase;
+    font-family: var(--title);
+}
+
+p,a{
+    font-family: var(--text);
+    color: var(--black);
+    font-weight: 500;
+    font-size: var(--size-text);
+}
+
+.container{
+    margin: 0 auto;
+    width: 1080px;
+}
+.main_navbar,.menu{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.main_navbar{
+    height: 100px;
+    background-color: var(--black);
+    padding: 0 100px;
+}
+.logo a{
+    font-family: var(--title);
+    font-size: var(--size-title);
+    color: var(--light-grey);
+    text-transform: uppercase;
+}
+.menu{
+    width: 40%;
+}
+.menu li a{
+    text-transform: uppercase;
+    padding: 10px 5px;
+    color: var(--grey);
+    position: relative;
+    transition: 0.3s ease-in-out;
+}
+.menu li a:hover{
+    color: var(--light-grey);
+}
+.menu li a::after{
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0%;
+    height: 1px;
+    background-color: var(--light-grey);
+    transition: 0.3s ease-in-out;
+}
+.menu li a:hover:after{
+    width: 100%;
+}
+.search{
+    width: 20%;
+}
+.search form{
+    width: 100%;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+.search form input{
+    width: 80%;
+    background-color: var(--light-grey);
+    padding:0 20px;
+    border-radius: 50px;
+}
+.search form button{
+    width: 20%;
+    cursor: pointer;    
+    background-color: transparent;
+}
+.search form button span{
+    color: var(--light-grey);
+}
+.search form input,.search form button{
+    height: 100%;
+    border: none;
+    outline: none;
+}
+.home{
+    background-image: url(../img/home.jpg);
+    background-position: center;
+    background-size: cover;
+    height: calc(100vh - 100px);
+}
