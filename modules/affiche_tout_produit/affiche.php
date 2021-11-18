@@ -9,7 +9,7 @@ include('C:\xampp\htdocs\distribpc\modules\affiche_tout_produit\requete_tout_pro
             <div class="left">
                 <p><b><?php echo htmlspecialchars($row['marque']); ?></b></p>
                 <p><b><?php echo htmlspecialchars($row['nom_produit']); ?></b></p>
-                <p class="produit_desc"><?php echo htmlspecialchars($row['description_courte']); ?></p>
+                <p class="produit_desc"><?php echo htmlspecialchars($row['description_courte']); ?>...</p>
                 <button><a href="modules/detailproduit/detail_produit.php?id_produit=<?php echo htmlspecialchars($row['id_produit']); ?>">Plus de details</a></button>
             </div>
             <div class="right">
