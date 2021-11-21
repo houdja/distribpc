@@ -13,7 +13,7 @@
     --white:#fff;
     --filter:rgba(0,0,0,0.3);
     --filter-hover:rgba(0,0,0,0.7);
-    --shadow: 0 5px 10px rgba(0,0,0,0.1);
+    --shadow: 0 5px 10px rgba(0,0,0,0.15);
     /* --title:'Anton', sans-serif; */
     --title:'overpass', sans-serif;
     --text:'overpass', sans-serif;
@@ -677,6 +677,7 @@ footer .down{
     border-radius: 0;
 }
 
+
 /* filtre */
 .filtre h2{
     text-align: center;
@@ -706,6 +707,7 @@ footer .down{
     font-size: 16px;
     outline: none;
 }
+
 .par_nom input[type='range']{
     -webkit-appearance: none;   
     padding: 0;                   
@@ -750,4 +752,129 @@ label{
 .par_nom div{
     margin-bottom: 30px;
     width: 100%;
+}
+
+/* CONTACT */
+.contact{
+    background-color: var(--white);
+    padding: 200px 0 100px 0;
+}
+.contact .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.contact form{
+    box-shadow: var(--shadow);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 40%;
+    background-color: var(--white);
+    height:600px;
+}
+
+.contact form,.contact .info_contact{
+    padding: 30px 20px;
+}
+
+.contact .info_contact{
+    width: 45%;
+    background-color: var(--red);
+    height:auto;
+    box-shadow: var(--shadow);
+}
+.contact form input::placeholder,.contact form textarea::placeholder{
+    color: var(--black);
+}
+.contact form option{
+    color: var(--black);
+}
+.contact form input,.contact form select,.contact form textarea, .contact form button{
+    font-family: var(--text);
+    border: 1px solid var(--black);
+    outline:none;
+    padding: 5px 10px;
+    background-color: transparent;
+    color: var(--black);
+    font-size: 16px;
+}
+.contact form div{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.contact form div input{
+    width: 48%;
+}
+.contact form textarea{
+    resize: none;
+}
+.contact form input:valid{
+    border:1px solid rgb(63, 212, 133);
+}
+.contact form input:invalid{
+    border:1px solid var(--red);
+}
+.info_contact > div:nth-child(1){
+    margin-bottom: 20px;
+}
+.info_contact p{
+    color: var(--white);
+}
+.contain_question{
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+}
+.contain_question h1,.info_contact h1{
+    margin-bottom: 30px;
+    color: var(--white);
+}
+.box_question{
+    margin-bottom: 20px;
+    position: relative;
+    z-index: 10;
+}
+.box_question .question,.box_question .reponse{
+    border: 1px solid var(--white);
+}
+.box_question .question p,.box_question .reponse{
+    padding: 5px;
+    color: var(--white);
+}
+.box_question .question{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.box_question .question img{
+    height: 33.81px;
+    object-fit: cover;
+    object-position: center;
+    cursor: pointer;
+    background-color: var(--white);
+    transform: translateX(2px);
+    transition: 0.3s ease-in-out;
+}
+.box_question .question img.active{
+    transform: rotate(90deg) translateX(0) translateY(-2px);
+}
+.box_question .reponse{
+    border-top: none;
+    display: none;
+}
+.box_question .reponse.active{
+    display: block;
+    animation: fade 0.3s ease-in-out;
+}
+@keyframes fade {
+    0%{
+        opacity: 0;
+        transform: translateY(10%);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0%);
+    }
 }
