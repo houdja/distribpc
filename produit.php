@@ -7,10 +7,11 @@ require_once('component/navbar.php');
         <div class="filtre">
             <h2>Affinez votre recherche</h2>
             <form class="par_nom" action='modules/recherche_tout_produit/traitement_tout_produits.php' method='POST'>
-                
+
                 <div>
                     <label>Prix</label>
-                    <input type="range" name='prix' min='0' max='2000' step='10' value="0" class='filtre_prix'>
+                    <?php
+                    require_once('C:/xampp/htdocs/distribpc/modules/recherche_tout_produit/affiche_maxprice/affiche_maxprixce.php') ?>
                     <p class='affiche_prix'>0€</p>
                 </div>
 
@@ -20,7 +21,7 @@ require_once('component/navbar.php');
                     <?php
                     require_once('C:/xampp/htdocs/distribpc/modules/recherche_tout_produit/remplir_marque/affiche_marque.php');
                     ?>
-                </div>            
+                </div>
 
                 <div>
                     <label>Categorie</label>
