@@ -23,7 +23,7 @@
         </div>
     </div>
 </footer>
-    <script src='js/main.js'></script>
+<script src='http://localhost/distribpc/js/main.js'></script>
 </body>
 
 </html>

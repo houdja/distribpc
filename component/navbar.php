@@ -23,7 +23,7 @@
             </div>
         </li>
         <li><a href="http://localhost/distribpc/presentation.php">Presentation</a></li>
-        <li><a href="#">Contact</a></li>
+        <li><a href="http://localhost/distribpc/contact.php">Contact</a></li>
     </ul>
     <div class="search">
         <form>
