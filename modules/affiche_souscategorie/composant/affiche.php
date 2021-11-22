@@ -3,7 +3,7 @@ include('C:/xampp/htdocs/distribpc/modules/affiche_souscategorie/composant/reque
 ?>
 
 <ul>
-    <a href="#">Composants</a>
+    <a href="http://localhost/distribpc/composant.php">Composant</a>
     <?php while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) : ?>
         <li><a href="#"> <?php echo htmlspecialchars($row['nom_souscategorie']); ?></a></li>
     <?php endwhile; ?>

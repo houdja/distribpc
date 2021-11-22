@@ -9,7 +9,7 @@ include('C:\xampp\htdocs\distribpc\modules\affiche_dernier_produit\requete_derni
             <p><?php echo htmlspecialchars($row['nom_produit']); ?></p>
             <p class='descr'><?php echo htmlspecialchars($row['description_courte']); ?></p>
             <p><?php echo htmlspecialchars($row['prix']); ?> €</p>
-            <button><a href="modules/detailproduit/detail_produit.php?id_produit=<?php echo htmlspecialchars($row['id_produit']); ?>">Plus de details</a></button>
+            <button><a href="http://localhost/distribpc/modules/detailproduit/detail_produit.php?id_produit=<?php echo htmlspecialchars($row['id_produit']); ?>">Plus de details</a></button>
         </div>
     </div>
 <?php endwhile; ?>
