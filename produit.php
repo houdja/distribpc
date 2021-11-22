@@ -6,27 +6,27 @@ require_once('component/navbar.php');
     <div class="container">
         <div class="filtre">
             <h2>Affinez votre recherche</h2>
-            <form class="par_nom">
-                <div>
-                    <label>Recherche par nom</label>
-                    <input type="text" name="nom_produit" placeholder="Nom du produit" required>
-                </div>
-
+            <form class="par_nom" action='modules/recherche_tout_produit/traitement_tout_produits.php' method='POST'>
+                
                 <div>
                     <label>Prix</label>
-                    <input type="range" min='0' max='2000' step='10' value="0" class='filtre_prix'>
+                    <input type="range" name='prix' min='0' max='2000' step='10' value="0" class='filtre_prix'>
                     <p class='affiche_prix'>0€</p>
                 </div>
+
+
+                <div>
+                    <label>Marque</label>
+                    <?php
+                    require_once('C:/xampp/htdocs/distribpc/modules/recherche_tout_produit/remplir_marque/affiche_marque.php');
+                    ?>
+                </div>            
+
                 <div>
                     <label>Categorie</label>
-                    <select name="categorie">
-                        <option value="0">0</option>
-                        <option value="0">1</option>
-                        <option value="0">2</option>
-                        <option value="0">3</option>
-                        <option value="0">4</option>
-                        <option value="0">5</option>
-                    </select>
+                    <?php
+                    require_once('C:/xampp/htdocs/distribpc/modules/recherche_tout_produit/remplir_categorie/affiche_categorie.php');
+                    ?>
                 </div>
 
                 <button type="submit">Rechercher</button>
@@ -35,7 +35,7 @@ require_once('component/navbar.php');
         <div class="contain_produit">
             <h1>Tout nos produits</h1>
             <?php
-            require_once('C:\xampp\htdocs\distribpc\modules\affiche_tout_produit\affiche.php');
+            require_once('C:/xampp/htdocs/distribpc/modules/affiche_tout_produit/affiche.php');
             ?>
         </div>
     </div>
