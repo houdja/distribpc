@@ -46,7 +46,7 @@ include("C:/xampp/htdocs/distribpc/modules/detailproduit/requete_detail.php");
 
           <p class='pas_dispo'>Non disponible</p>
 
-        <?php } ?>
+        <?php }; ?>
 
 
 
