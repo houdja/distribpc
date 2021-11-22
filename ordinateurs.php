@@ -11,22 +11,22 @@ require_once('component/navbar.php');
             <form class="par_nom" method='POST' action='modules/recherche_ordinateurs/traitement_recherche.php'>
                 <div>
                     <label>Prix</label>
-                    <input type="range" name='prix' min='0' max='2000' step='10' value="0" class='filtre_prix'>
+                    <?php
+                    require_once('C:/xampp/htdocs/distribpc/modules/recherche_ordinateurs/affiche_maxprice/affiche_maxprixce.php')
+                    ?>
                     <p class='affiche_prix'>0€</p>
                 </div>
                 <div>
                     <label>Categorie</label>
-                    <select name="categorie">
-                        <option value="1">Ordinateur fixe</option>
-                        <option value="2">Pc portable</option>
-                    </select>
+                    <?php
+                    require_once('C:/xampp/htdocs/distribpc/modules/recherche_ordinateurs/remplir_categorie/affiche_categorie.php')
+                    ?>
                 </div>
                 <div>
                     <label>Marque</label>
-                    <select name="marque">
-                        <option value="Distribpc">Distribpc</option>
-                        <option value="MSI">MSI</option>
-                    </select>
+                    <?php
+                    require_once('C:/xampp/htdocs/distribpc/modules/recherche_ordinateurs/remplir_marque/affiche_marque.php')
+                    ?>
                 </div>
 
                 <button type="submit">Rechercher</button>

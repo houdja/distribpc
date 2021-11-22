@@ -11,21 +11,25 @@ require_once('component/navbar.php');
             <form class="par_nom" method='POST' action='modules/recherche_peripherique/traitement_peripherique.php'>
                 <div>
                     <label>Prix</label>
-                    <input type="range" name='prix' min='0' max='2000' step='10' value="0" class='filtre_prix'>
+                    <?php
+                    require_once('C:/xampp/htdocs/distribpc/modules/recherche_peripherique/affiche_maxprice/affiche_maxprixce.php')
+                    ?>
                     <p class='affiche_prix'>0€</p>
                 </div>
-                <div>
-                <label>Marque</label>
-                <select name="marque">
-                    <option value="MSI">MSI</option>
-                    <option value="Samsung">Samsung</option>
-                </select>
-            </div>
+
                 <div>
                     <label>Categorie</label>
-                    <select name="categorie">
-                        <option value="3">Ecran</option>
-                    </select>
+                    <?php
+                    require_once('C:/xampp/htdocs/distribpc/modules/recherche_peripherique/remplir_categorie/affiche_categorie.php')
+                    ?>
+                </div>
+
+
+                <div>
+                    <label>Marque</label>
+                    <?php
+                    require_once('C:/xampp/htdocs/distribpc/modules/recherche_peripherique/remplir_marque/affiche_marque.php')
+                    ?>
                 </div>
 
                 <button type="submit">Rechercher</button>
