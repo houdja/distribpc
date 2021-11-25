@@ -24,7 +24,6 @@ require_once('component/navbar.php');
                     ?>
                 </div>
 
-
                 <div>
                     <label>Marque</label>
                     <?php
