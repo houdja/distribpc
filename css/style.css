@@ -9,11 +9,12 @@
     --grey:#696A72;
     --black:#090609;
     --red:#F24535;
+    --green:rgb(63, 212, 133);
     --light-grey:#EBEEF2;
     --white:#fff;
     --filter:rgba(0,0,0,0.3);
     --filter-hover:rgba(0,0,0,0.7);
-    --shadow: 0 5px 10px rgba(0,0,0,0.15);
+    --shadow: 0 5px 10px rgba(0,0,0,0.19);
     /* --title:'Anton', sans-serif; */
     --title:'overpass', sans-serif;
     --text:'overpass', sans-serif;
@@ -534,13 +535,14 @@ footer .down{
 .detail .container{
     padding: 200px 0 100px 0;
     display: flex;
+    justify-content: space-between;
     align-items: center;
 }
 .detail h1{
     color: var(--red);
 }
 .detail .container img{
-    width: 50%;
+    width: 45%;
     object-fit: cover;
     object-position: center;
 }
@@ -560,7 +562,7 @@ footer .down{
     position: relative;
 }
 .prix_barre{
-    color: var(--grey);
+    color: rgba(0,0,0,0.3);
     font-size: 25px;
 }
 .prix_barre::after{
@@ -568,8 +570,8 @@ footer .down{
     position: absolute;
     top: 50%;
     left: 0;
-    width:20%;
-    height: 5px;
+    width:15%;
+    height: 2px;
     transform: translate(-5%,-100%);
     background-color: var(--red);
 }
@@ -780,7 +782,7 @@ label{
 
 .contact .info_contact{
     width: 45%;
-    background-color: var(--red);
+    background-color: var(--grey);
     height:auto;
     box-shadow: var(--shadow);
 }
@@ -877,4 +879,16 @@ label{
         opacity: 1;
         transform: translateY(0%);
     }
+}
+
+/* SECTION COMPOSANT / PERIPHERIQUE / ORDINATEUR */
+
+.result .container{
+    padding: 200px 0 100px 0;
+}
+.result .contain_card{
+    justify-content: flex-start;
+}
+.result .contain_card .card:not(:first-child){
+    margin-left: 1%;
 }
