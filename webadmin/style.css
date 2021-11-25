@@ -13,6 +13,7 @@
     --orange-color: #F24822;
     --light-orange-color: #F29D35;
     --yellow-color: #F2DE79;
+    --green:rgb(63, 212, 133);
     --font: 'overpass', sans-serif;
     --small-text-size: 13.5px;
     --title-size: 32px;
@@ -25,6 +26,12 @@ body{
 }
 a{
     color: var(--black-color);
+}
+h1{
+    font-size: var(--title-size);
+    text-transform: uppercase;
+    font-weight: 400;
+    margin-bottom: 20px;
 }
 .dashboard{
     min-height: 100vh;
@@ -111,28 +118,9 @@ aside .aside_menu li a img{
     background-color: var(--white-color);
     overflow: hidden;
 }
-main > div{
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    display: none;
-    padding: 20px;
-    overflow-y: scroll;
-}
-main div.active{
-    display: block;
-}
-main > div:nth-child(1){
-    background-color: var(--light-orange-color);
-}
 
-main > div:nth-child(3){
-    background-color: var(--yellow-color);
-}
-main > div:nth-child(4){
-    background-color: var(--red-color);
+main > div{
+    padding: 20px;
 }
 .info{
     height: 100vh;
@@ -163,4 +151,90 @@ tr.row td a{
     width: 100%;
     height: 100%;
     padding: 0 20px;
+}
+.success{
+    color: var(--green);
+}
+.danger{
+    color: var(--red-color);
+}
+.pagination{
+    margin-top: 20px;
+}
+.pagination a{
+    background-color: var(--white-color);
+    box-shadow: var(--shadow);
+    padding: 5px 10px;
+}
+.en_tete{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.en_tete button{
+    border: 1px solid var(--green);
+    background-color: transparent;
+    border-radius: 5px;
+    width: 100px;
+    height: 30px;
+}
+.en_tete button a{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    font-family: var(--font);
+    color: var(--green);
+    transition: 0.3s ease-in-out;
+}
+.en_tete button a:hover{
+    letter-spacing: 2px;
+}
+
+/* FORMULAIRE DASHBOARD */
+
+.dash_form{
+    width: 500px;
+}
+.dash_form input::placeholder,.dash_form textarea::placeholder{
+    text-transform: uppercase;
+    font-style: italic;
+}
+.dash_form input,
+.dash_form button,
+.dash_form select,
+.dash_form textarea{
+    outline: none;
+    border: none;
+    border-bottom: 1px solid var(--black-color);
+    padding: 10px 5px;
+    font-family: var(--font);
+    width: 100%;
+    margin-bottom: 30px;
+    font-size: 14px;
+}
+.desc_c{
+    resize: none;
+}
+.dual{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.dual input,.dual select{
+    width: 48%;
+}
+.dash_form button{
+    background-color: var(--green);
+    text-transform: uppercase;
+    border: 1px solid var(--green);
+    color: var(--white-color);
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+.dash_form button:hover{
+    background-color: transparent;
+    color: var(--green);
 }
