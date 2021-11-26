@@ -7,6 +7,12 @@ include('C:/xampp/htdocs/distribpc/modules/affiche_ordinateur/requete_ordinateur
         <img src="http://localhost/distribpc/img/<?php echo htmlspecialchars($row['image_produit']); ?>" alt="<?php echo htmlspecialchars($row['nom_produit']); ?>" class="produit_pic">
         <div class="info_produit">
             <div class="left">
+                <?php
+                if (htmlspecialchars($row['promo']) == 'true') { ?>
+
+                    <p class='promo'>En promotion</p>
+
+                <?php } ?>
                 <p><b><?php echo htmlspecialchars($row['marque']); ?></b></p>
                 <p><b><?php echo htmlspecialchars($row['nom_produit']); ?></b></p>
                 <p class="produit_desc"><?php echo htmlspecialchars($row['description_courte']); ?>...</p>
