@@ -39,7 +39,7 @@ include("C:/xampp/htdocs/distribpc/webadmin/modules/produits/lister/requete_affi
 
     <td><?php echo htmlspecialchars($row['garantit']); ?></td>
     <td><a href="http://localhost/distribpc/webadmin/modules/produits/modifier/modification_produit.php?id_produit=<?php echo htmlspecialchars($row['id_produit']); ?>"><img src="https://img.icons8.com/officexs/16/000000/edit.png" /></a></td>
-    <td><a href="http://localhost/distribpc/webadmin/modules/produits/modifier/modification_produit.php?id_produit=<?php echo htmlspecialchars($row['id_produit']); ?>"><img src="https://img.icons8.com/ultraviolet/16/000000/trash.png" /></a></td>
+    <td><a href="http://localhost/distribpc/webadmin/modules/produits/supprimer/traitement_suppresion.php?id_produit=<?php echo htmlspecialchars($row['id_produit']); ?>"><img src="https://img.icons8.com/ultraviolet/16/000000/trash.png" /></a></td>
   </tr>
 
 <?php endwhile; ?>
