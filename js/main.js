@@ -17,8 +17,10 @@
 
 (function(){
     function affiche_prix(el1, el2){
-        el1.addEventListener('change', function(){
-            el2.innerHTML = el1.value + '€';
+        //Event input s'active a chaque changement dans l'input
+        //Event change s'active a chaque changement quand on a fini avec l'input
+        el1.addEventListener('input', function(){
+            el2.innerHTML = this.value + '€';
         })
     }
 
