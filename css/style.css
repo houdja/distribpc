@@ -275,7 +275,13 @@ section{
     box-shadow:var(--shadow); 
     position: relative;
 }
-
+.card .promo{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: var(--green);
+    margin: 0;
+}
 .card_text{
     text-align: center;
     padding: 10px 0;
@@ -562,17 +568,18 @@ footer .down{
     position: relative;
 }
 .prix_barre{
-    color: rgba(0,0,0,0.3);
+    color: rgba(0,0,0,0.5);
     font-size: 25px;
+    width: unset;
 }
 .prix_barre::after{
     content: '';
     position: absolute;
     top: 50%;
     left: 0;
-    width:15%;
-    height: 2px;
-    transform: translate(-5%,-100%);
+    width:100%;
+    height: 5px;
+    transform: translate(0,-130%);
     background-color: var(--red);
 }
 .garantit,.disponible,.promo,.pourcentage_promo,.pas_dispo{
@@ -582,20 +589,24 @@ footer .down{
 }
 .garantit,.promo,.pourcentage_promo{
     background-color: var(--red);
-    font-size: 13px;
+    font-size: 14px;
 }
-.disponible{
+.promo{
+    background-color: var(--green);
+}
+.disponible,.garantit{
     border:1px solid rgb(63, 212, 133);
     color: rgb(63, 212, 133);
+    background-color: transparent;
 }
-.pas_dispo,.garantit{
+.pas_dispo{
     border:1px solid var(--red);
     background-color: transparent;
     color: var(--red);
 }
 
 .pas_dispo,.disponible{
-    font-size: 13px;
+    font-size: 14px;
 }
 /* PAGE PRODUIT */
 
@@ -633,8 +644,13 @@ footer .down{
     display: flex;
     justify-content: space-between;
     margin: 20px 0;
+    position: relative;
 }
-
+.card_produit .promo{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
 .card_produit .left{
     width: 80%;
 }
@@ -647,6 +663,9 @@ footer .down{
 }
 .info_produit p{
     margin-bottom: 8px;
+}
+.info_produit p b{
+    text-transform: uppercase;
 }
 .produit_desc{
     width: 95%;
