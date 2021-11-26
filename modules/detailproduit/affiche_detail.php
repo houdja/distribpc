@@ -26,8 +26,10 @@ include("C:/xampp/htdocs/distribpc/modules/detailproduit/requete_detail.php");
 
           <p class='promo'>Promotion -<?php echo htmlspecialchars($row['pourcentage_promo']); ?> %</p>
 
-          <p class='prix_barre'><?php echo $prix ?> €</p>
-          <p class='prix_promo'><?php echo $prix - ($prix * $pourcentage / 100) ?> €</p>
+          <div>
+            <p class='prix_barre'><?php echo $prix ?> €</p>
+          </div>
+          <p class='prix_promo'><?php echo round($prix - ($prix * $pourcentage / 100), 2) ?> €</p>
 
         <?php } else { ?>
 
