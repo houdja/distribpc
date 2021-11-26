@@ -12,6 +12,12 @@ include('C:\xampp\htdocs\distribpc\modules\affiche_meilleure_ventes\requete_meil
 
             <p><?php echo htmlspecialchars($row['prix']); ?> €</p>
 
+            <?php if (htmlspecialchars($row['promo']) == 'true') { ?>
+
+                <p class='promo'>En promotion</p>
+
+            <?php } ?>
+
             <button><a href="http://localhost/distribpc/modules/detailproduit/detail_produit.php?id_produit=<?php echo htmlspecialchars($row['id_produit']); ?>">Plus de details</a></button>
         </div>
     </div>
