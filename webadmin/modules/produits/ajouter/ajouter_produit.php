@@ -20,6 +20,7 @@ require_once('C:/xampp/htdocs/distribpc/webadmin/component/header.php');
     <div class='produit'>
       <h1>Ajouter un produit</h1>
       <form action="http://localhost/distribpc/webadmin/modules/produits/ajouter/traitement_ajout_produit.php" method='POST' class='dash_form'>
+
         <input type="text" name="num_ref" placeholder="N° réference">
 
         <div class="dual">
