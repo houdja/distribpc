@@ -59,8 +59,8 @@ require_once('C:/xampp/htdocs/distribpc/webadmin/component/header.php');
 
         <div class="dual">
           <select name="promo">
-            <option value="true">Promo</option>
             <option value="NULL">Pas en promo</option>
+            <option value="true">Promo</option>
           </select>
           <input type="text" name='pourcentage_promo' placeholder="% Promo">
         </div>
