@@ -8,15 +8,15 @@
             <div class="submenu">
                 <div class="container">
                     <ul>
-                        <?php require_once('C:\xampp\htdocs\distribpc\modules\affiche_souscategorie\ordinateur\affiche.php')
+                        <?php require_once('C:/xampp/htdocs/distribpc/modules/affiche_souscategorie/ordinateur/affiche.php')
                         ?>
                     </ul>
                     <ul>
-                        <?php require_once('C:\xampp\htdocs\distribpc\modules\affiche_souscategorie\peripherique\affiche.php')
+                        <?php require_once('C:/xampp/htdocs/distribpc/modules/affiche_souscategorie/composant/affiche.php')
                         ?>
                     </ul>
                     <ul>
-                        <?php require_once('C:\xampp\htdocs\distribpc\modules\affiche_souscategorie\composant\affiche.php')
+                        <?php require_once('C:/xampp\htdocs/distribpc/modules/affiche_souscategorie/peripherique/affiche.php')
                         ?>
                     </ul>
                 </div>

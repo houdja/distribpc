@@ -666,6 +666,7 @@ footer .down{
 }
 .info_produit p b{
     text-transform: uppercase;
+    font-weight: 400;
 }
 .produit_desc{
     width: 95%;
