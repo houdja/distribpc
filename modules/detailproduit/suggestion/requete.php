@@ -6,7 +6,7 @@ $idproduit = $_GET['id_produit'];
 
 
 $sql = "SELECT * FROM produits 
-WHERE id_souscategorie=(SELECT produits.id_souscategorie FROM produits WHERE id_produit=:id_produit)";
+WHERE id_souscategorie=(SELECT produits.id_souscategorie FROM produits WHERE id_produit=:id_produit) ORDER BY id_produit DESC";
 try {
 
     $stmt = $db->prepare($sql);
