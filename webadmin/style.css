@@ -262,16 +262,18 @@ tr.row td a{
     color: var(--red-color);
 }
 .contain_stats{
-    height: 400px;
+    height: auto;
     width: 100%;
     margin-top: 50px;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 .contain_stats .card{
-    width: 19%;
-    height: 100%;
+    width: 30%;
+    height: 400px;
+    margin-bottom: 50px;
     box-shadow: var(--shadow);
     display: flex;
     flex-direction: column;
