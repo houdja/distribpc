@@ -51,11 +51,13 @@ include("C:/xampp/htdocs/distribpc/modules/detailproduit/requete_detail.php");
         <?php }; ?>
 
 
-
       </div>
 
     <?php endwhile; ?>
   </div>
+  <?php
+  include("C:/xampp/htdocs/distribpc/modules/detailproduit/suggestion/affiche.php");
+  ?>
 </section>
 
 <?php
