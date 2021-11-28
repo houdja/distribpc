@@ -1,8 +1,8 @@
 <?php
-$messagesParPage = 15; //Nous allons afficher 5 messages par page.
-include("modules/connexiondb/connexiondb.php");
+$messagesParPage = 10; //Nous allons afficher 5 messages par page.
+include("C:/xampp/htdocs/distribpc/webadmin/modules/connexiondb/connexiondb.php");
 //Une connexion SQL doit être ouverte avant cette ligne...
-$sql = "SELECT * FROM produits";
+$sql = "SELECT * FROM produits WHERE produits.id_categorie = (SELECT categorie.id_categorie FROM categorie WHERE nom_categorie ='Périphériques')";
 try {
 
     $stmt = $db->query($sql);
