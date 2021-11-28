@@ -32,6 +32,9 @@ require_once('C:/xampp/htdocs/distribpc/webadmin/component/header.php') ?>
                 <?php
                 require_once('C:/xampp/htdocs/distribpc/webadmin/modules/data_dashboard/rupture_stock/affiche.php')
                 ?>
+                <?php
+                require_once('C:/xampp/htdocs/distribpc/webadmin/modules/data_dashboard/promotion/affiche.php')
+                ?>
             </div>
         </div>
     </main>
