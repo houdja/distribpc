@@ -52,7 +52,7 @@ require_once('C:/xampp/htdocs/distribpc/webadmin/component/header.php');
         <div class="dual">
           <select name="dispo">
             <option value="disponible">Disponible</option>
-            <option value="NULL">Indisponible</option>
+            <option value="pas dispo">Indisponible</option>
           </select>
           <input type="text" name="garantit" placeholder="Garantit">
         </div>
