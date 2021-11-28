@@ -2,7 +2,7 @@
 
 include('C:/xampp/htdocs/distribpc/modules/connexiondb/connexiondb.php');
 
-$sql = " SELECT DISTINCT marque FROM produits";
+$sql = " SELECT DISTINCT marque FROM produits ORDER BY marque ASC";
 
 try {
 

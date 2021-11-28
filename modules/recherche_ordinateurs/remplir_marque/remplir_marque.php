@@ -2,7 +2,7 @@
 
 include('C:/xampp/htdocs/distribpc/modules/connexiondb/connexiondb.php');
 
-$sql = " SELECT DISTINCT marque FROM produits WHERE produits.id_categorie = (SELECT categorie.id_categorie FROM categorie WHERE categorie.nom_categorie = 'Ordinateurs') ";
+$sql = " SELECT DISTINCT marque FROM produits WHERE produits.id_categorie = (SELECT categorie.id_categorie FROM categorie WHERE categorie.nom_categorie = 'Ordinateurs') ORDER BY marque ASC ";
 
 try {
 
