@@ -51,11 +51,12 @@ h1{
     align-items: center;
     justify-content: space-between;
     box-shadow: var(--shadow);
-    background-color: var(--black-casse);
+    background-color: var(--red-color);
 }
 .dashboard nav .logo{
     text-transform: uppercase;
     font-size: var(--title-size);
+    color: var(--white-color);
 }
 nav .compte{
     display: flex;
@@ -120,7 +121,7 @@ aside .aside_menu li a img{
 }
 
 main > div{
-    padding: 20px;
+    padding: 20px 50px;
 }
 .info{
     height: 100vh;
@@ -136,7 +137,6 @@ table tr td{
     font-size: 14px;
     font-weight: 400;
     text-align: center;
-    width: calc(100% / 12)
 }
 table tr th{
     text-transform: uppercase;
@@ -277,6 +277,18 @@ tr.row td a{
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
+    position: relative;
+    z-index: 2;
+}
+.card::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 50%;
+    height: 100%;
+    background-color: #f2f2f2a1;
+    z-index: -1;
 }
 .card p{
     text-align: center;
@@ -321,59 +333,8 @@ tr.row td a{
 }
 /* DETAILS */
 .details{
-    padding: 200px 0 50px 0;
+    padding: 50px;
 }
 .details h1{
     margin-bottom: 50px;
-}
-.categorie ul{
-    width: 100%;
-    display: flex;
-    align-items: center;
-    margin-bottom: 30px;
-}
-.categorie ul li{
-    width: 20%;
-    height: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    padding: 10px 0;
-    border-top: 1px solid var(--filter-black);
-    border-right: 1px solid var(--filter-black);
-    border-bottom: 1px solid var(--filter-black);
-    transition: 0.3s ease-in-out;
-    flex: 1;
-    text-transform: uppercase;
-}
-.categorie ul li:first-child{
-    border-left: 1px solid var(--filter-black);
-}
-.categorie ul li.active{
-    cursor: pointer;
-    padding: 10px 0;
-    flex: 1.5;
-    color: var(--red-color);
-}
-.info_categorie div{
-    width: 100%;
-    height: 500px;
-    background-color: #F22727;
-    display: none;
-}
-.info_categorie div.active{
-    display: block;
-}
-.info_categorie div:nth-child(2){
-    background-color: #F2DE79;
-}
-.info_categorie div:nth-child(3){
-    background-color: #0D0D0D;
-}
-.info_categorie div:nth-child(4){
-    background-color: #F24822;
-}
-.info_categorie div:nth-child(5){
-    background-color: #f2c122;
 }
