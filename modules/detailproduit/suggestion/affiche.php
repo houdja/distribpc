@@ -11,7 +11,8 @@ $counter = 0;
             <h1>Produit<?php echo $count > 2 ? 's' : '' ?> similaires</h1>
             <div class="contain_card">
                 <?php while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) : ?>
-                    <?php if (htmlspecialchars($row['id_produit']) != $_GET['id_produit'] && $counter <= 4) { ?>
+                    <?php if (htmlspecialchars($row['id_produit']) != $_GET['id_produit'] && $counter < 4) { ?>
+                        <?php $counter++ ?>
                         <div class="card">
                             <img src="http://localhost/distribpc/img/<?php echo htmlspecialchars($row['image_produit']); ?>" alt="<?php echo htmlspecialchars($row['nom_produit']); ?>" class='card_pic'>
                             <div class="card_text">
@@ -28,7 +29,7 @@ $counter = 0;
                             </div>
                         </div>
                     <?php } ?>
-                <?php $counter++;
+                <?php
                 endwhile; ?>
             </div>
         </div>
