@@ -24,7 +24,12 @@ require_once('C:/xampp/htdocs/distribpc/webadmin/component/header.php');
         <input type="text" name="num_ref" placeholder="N° réference">
 
         <div class="dual">
-          <input type="text" name="marque" placeholder="Marque">
+        <select name="marque">
+        <option value="NULL">Choisir une marque</option>
+          <?php
+          require_once('C:/xampp/htdocs/distribpc/webadmin/modules/produits/ajouter/affiche_marque/affiche.php') 
+          ?>
+        </select>
           <input type="text" name="nom_produit" placeholder="Nom du produit">
         </div>
 
