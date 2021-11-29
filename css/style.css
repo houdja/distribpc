@@ -16,8 +16,8 @@
     --filter-hover:rgba(0,0,0,0.7);
     --shadow: 0 5px 10px rgba(0,0,0,0.19);
     /* --title:'Anton', sans-serif; */
-    --title:'overpass', sans-serif;
-    --text:'overpass', sans-serif;
+    --title:'Outfit', sans-serif;
+    --text:'Outfit', sans-serif;
     --size-title:40px;
     --size-text:17px;
 }
@@ -248,10 +248,10 @@ section{
     min-height: 100vh;
 }
 /* NOUVEAU / VENTES */
-.nouveau,.ventes{
+.nouveau,.ventes,.suggestion{
     background-color: var(--white);
 }
-.nouveau .container,.ventes .container{
+.nouveau .container,.ventes .container,.suggestion .container{
     padding: 100px 0;
 }
 .nouveau h1,
@@ -538,7 +538,7 @@ footer .down{
 .detail{
     background-color: var(--white);
 }
-.detail .container{
+.detail > .container{
     padding: 200px 0 100px 0;
     display: flex;
     justify-content: space-between;
@@ -547,7 +547,7 @@ footer .down{
 .detail h1{
     color: var(--red);
 }
-.detail .container img{
+.detail > .container  img{
     width: 45%;
     object-fit: cover;
     object-position: center;
@@ -906,9 +906,27 @@ label{
 .result .container{
     padding: 200px 0 100px 0;
 }
-.result .contain_card{
+.result .contain_card,.suggestion .contain_card{
     justify-content: flex-start;
 }
-.result .contain_card .card:not(:first-child){
+.result .contain_card .card:not(:first-child),
+.suggestion .contain_card .card:not(:first-child){
     margin-left: 1%;
+}
+
+/* SUGGESTION */
+.suggestion.danger,.suggestion.success{
+    min-height: auto;
+}
+.suggestion.success .container,.suggestion.danger .container{
+    padding: 50px 0 100px 0;
+}
+.suggestion.danger p{
+    padding: 15px 20px;
+    border:1px solid #f24535;
+    color: var(--red);
+    text-transform: uppercase;
+}
+.suggestion.danger h1,.suggestion.success h1{
+    margin-bottom: 50px;
 }
