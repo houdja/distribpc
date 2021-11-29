@@ -23,6 +23,8 @@ require_once('C:/xampp/htdocs/distribpc/webadmin/component/header.php');
 
         <input type="text" name="marque" placeholder="Nom de la marque">
 
+        <input type="file" name="image_marque" required>
+
         <button type="submit">Ajouter</button>
 
       </form>
