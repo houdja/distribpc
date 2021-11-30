@@ -930,3 +930,60 @@ label{
 .suggestion.danger h1,.suggestion.success h1{
     margin-bottom: 50px;
 }
+
+/** PAGE LOGIN **/
+
+.login{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+.img_login{
+    width: 30%;
+    height: 600px;
+    object-fit: cover;
+    object-position: center;
+    box-shadow: var(--shadow);
+}
+.login form{
+    width: 70%;
+    height: 600px;
+    background-color: var(--black);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: var(--shadow);
+    color: var(--light-grey);
+}
+.login form h1{
+    margin-bottom: 30px;
+}
+.login form button{
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.login form input,.login form button{
+    width: 60%;
+    padding: 10px 20px;
+    font-family: var(--text);
+    margin: 20px 0;
+    border: 0;
+    border-bottom: 1px solid var(--light-grey);
+    font-size: var(--size-text);
+    background-color: transparent;
+    outline: none;
+    color: var(--light-grey);
+}
+.login form button{
+    background-color: var(--light-grey);
+    color: var(--black);    
+    border: 1px solid var(--black);
+    transition: 0.3s ease-in-out;
+}
+.login form button:hover{
+    background-color: var(--green);
+    border: 1px solid var(--green);
+    color: var(--light-grey);
+}
