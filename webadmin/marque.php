@@ -1,4 +1,11 @@
 <?php
+session_start();
+if (isset($_SESSION['sess_user_id']) && $_SESSION['sess_user_name'] != "") {
+} else {
+    header('location:index.php');
+}
+?>
+<?php
 require_once('C:\xampp\htdocs\distribpc\webadmin\component\header.php');
 ?>
 
