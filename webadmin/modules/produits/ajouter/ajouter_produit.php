@@ -24,12 +24,12 @@ require_once('C:/xampp/htdocs/distribpc/webadmin/component/header.php');
         <input type="text" name="num_ref" placeholder="N° réference">
 
         <div class="dual">
-        <select name="marque">
-        <option value="NULL">Choisir une marque</option>
-          <?php
-          require_once('C:/xampp/htdocs/distribpc/webadmin/modules/produits/ajouter/affiche_marque/affiche.php') 
-          ?>
-        </select>
+          <select name="marque">
+            <option value="NULL">Choisir une marque</option>
+            <?php
+            require_once('C:/xampp/htdocs/distribpc/webadmin/modules/produits/ajouter/affiche_marque/affiche.php')
+            ?>
+          </select>
           <input type="text" name="nom_produit" placeholder="Nom du produit">
         </div>
 
@@ -59,7 +59,7 @@ require_once('C:/xampp/htdocs/distribpc/webadmin/component/header.php');
             <option value="disponible">Disponible</option>
             <option value="pas dispo">Indisponible</option>
           </select>
-          <input type="text" name="garantit" placeholder="Garantit">
+          <input type="text" name="garantit" placeholder="Garantit" value='NC'>
         </div>
 
         <div class="dual">
