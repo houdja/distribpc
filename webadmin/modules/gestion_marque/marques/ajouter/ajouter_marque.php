@@ -19,7 +19,7 @@ require_once('C:/xampp/htdocs/distribpc/webadmin/component/header.php');
   <main>
     <div class='produit'>
       <h1>Ajouter un produit</h1>
-      <form action="http://localhost/distribpc/webadmin/modules/gestion_marque/marques/ajouter/traitement_ajout_marque.php" method='POST' class='dash_form'>
+      <form action="http://localhost/distribpc/webadmin/modules/gestion_marque/marques/ajouter/traitement_ajout_marque.php" method='POST' class='dash_form' enctype="multipart/form-data">
 
         <input type="text" name="marque" placeholder="Nom de la marque">
 

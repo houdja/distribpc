@@ -19,10 +19,10 @@ require_once('C:/xampp/htdocs/distribpc/webadmin/component/header.php');
   <main>
     <div class='produit'>
       <h1>Modifier une marque</h1>
-      <form action="http://localhost/distribpc/webadmin/modules/gestion_marque/marques/modifier/traitement_modification.php" method='POST' class='dash_form'>
+      <form action="http://localhost/distribpc/webadmin/modules/gestion_marque/marques/modifier/traitement_modification.php" method='POST' class='dash_form' enctype="multipart/form-data">
 
         <?php
-          require_once('C:/xampp/htdocs/distribpc/webadmin/modules/gestion_marque/marques/modifier/affiche_modification_marque.php')
+        require_once('C:/xampp/htdocs/distribpc/webadmin/modules/gestion_marque/marques/modifier/affiche_modification_marque.php')
         ?>
 
         <button type="submit">Ajouter</button>
