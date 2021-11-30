@@ -1,5 +1,5 @@
 <?php
-$messagesParPage = 15; //Nous allons afficher 5 messages par page.
+$messagesParPage = 8; //Nous allons afficher 5 messages par page.
 include("modules/connexiondb/connexiondb.php");
 //Une connexion SQL doit être ouverte avant cette ligne...
 $sql = "SELECT * FROM marque";
