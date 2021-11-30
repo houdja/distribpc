@@ -9,6 +9,7 @@ include("C:/xampp/htdocs/distribpc/webadmin/modules/gestion_marque/marques/liste
 
   <tr class='row'>
     <td><?php echo htmlspecialchars($row['nom_marque']); ?></td>
+    <td><img src="http://localhost/distribpc/img/<?php echo htmlspecialchars($row['image_marque']); ?>" alt="<?php echo htmlspecialchars($row['image_marque']); ?>" class='image_marque'></td>
     <td><a href="http://localhost/distribpc/webadmin/modules/gestion_marque/marques/modifier/modification_marque.php?id_marque=<?php echo htmlspecialchars($row['id_marque']); ?>"><img src="https://img.icons8.com/officexs/16/000000/edit.png" /></a></td>
     <td><a href="http://localhost/distribpc/webadmin/modules/gestion_marque/marques/supprimer/traitement_suppresion.php?id_marque=<?php echo htmlspecialchars($row['id_marque']); ?>"><img src="https://img.icons8.com/ultraviolet/16/000000/trash.png" /></a></td>
   </tr>
