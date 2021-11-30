@@ -11,7 +11,7 @@ require_once('component/header.php');
         <input type="text" name='username' placeholder="Username" required>
         <input type="password" name='mdp' placeholder="Mot de passe" required>
         <button type="submit" name="submitBtnLogin">Se connecter</button>
-
+        <p><?= @$msg ?></p>
     </form>
     <img src="img/login.jpg" alt="Ordinateur" class='img_login'>
 </div>
