@@ -987,3 +987,6 @@ label{
     border: 1px solid var(--green);
     color: var(--light-grey);
 }
+.login form p{
+    color: var(--light-grey);
+}
